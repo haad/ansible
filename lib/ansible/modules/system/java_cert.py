@@ -31,7 +31,8 @@ options:
       - Local path to load certificate from. One of cert_url or cert_path is required to load certificate.
   cert_alias:
     description:
-      - Imported certificate alias.
+      - Imported certificate alias, module will use alias when comparing certificates present in keystore
+        and if alias is present it will not replace it.
   pkcs12_path:
     description:
       - Local path to load PKCS12 keystore from.
